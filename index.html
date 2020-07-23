@@ -23,21 +23,21 @@
             <th colspan="2" ;>Class</th>
 
         </thead>
-        <tbody align="center" ;>
-            <tr id="firstRow">
+        <tbody align="center" id="tbody">
+            <tr id="row">
 
                 <td id="index">0</td>
                 <td id="name">Azhar</td>
                 <td id="class">9</td>
                 <td><button onclick="remove();">Delete</button></td>
             </tr>
-            <tr>
+            <tr id="row">
                 <td>1</td>
                 <td>Shani</td>
                 <td>10</td>
                 <td><button onclick="remove();">Delete</button></td>
             </tr>
-            <tr>
+            <tr id="row">
                 <td>2</td>
                 <td>Ali</td>
                 <td>11</td>
@@ -96,6 +96,22 @@
 <p id='pera'>
     Hello my name is azhar khan and I am web Developer <a href="javascript:void(0);" onclick="readMore();">Click for more</a> 
 </p>
+
+
+
+<table border="1">
+    <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th colspan="2">Class</th>
+    </thead>
+    <tbody id="tableBody">
+
+        
+    </tbody>
+</table>
+<button onclick="table()">Add Row</button>
+
 
     <script src="app.js"></script>
 </body>

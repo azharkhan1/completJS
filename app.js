@@ -1,4 +1,4 @@
-Chapter 1 
+// Chapter 1 
 
 
 alert("Hello World"); /* Task1 */
@@ -10,7 +10,7 @@ alert("Welcome to JS land!"); /* Task4
  */ alert("Happy Coding"); 
 
 
-Chapter 2
+// Chapter 2
 
 var userName;
 
@@ -49,7 +49,7 @@ var end="“▬▬▬▬▬▬▬▬▬ஜ ۩۞۩ ஜ▬▬▬▬▬▬▬▬▬
 alert(end);
 
 
-Chapter 3
+// Chapter 3
 
 var age = 23;
 alert("my age is "+age+" years old");
@@ -72,27 +72,27 @@ var prodcutQuantity=2;
 alert(""+visitorName+" Ordered "+prodcutQuantity+" "+productTitle+" on xyzclothing.com");
 
 
-Chapter 4
+// Chapter 4
 
 var x,y,z;
 
 /* legal variables declaration */
-var x;
-var fullName;
-var full_Name;
-var $money;
-var $$$;
+// var x;
+// var fullName;
+// var full_Name;
+// var $money;
+// var $$$;
 
 
 
 /* Illegal variables declaration  */
 
 
-var product cost;
-var money_%full;
-var plus-name;
-var my+name;
-var declaration/of;
+// var product cost;
+// var money_%full;
+// var plus-name;
+// var my+name;
+// var declaration/of;
 
 
 
@@ -101,7 +101,7 @@ document.write("<br>Variables must being with a letter, $ or _. For Example $nam
 document.write ("Vairable name are case sensitive <br>");
 document.write("Vairable names should not be JS keywords <br>");
 
-Chapter 5
+// Chapter 5
 
 var a = +prompt ("Enter the value of a");
 var b = +prompt ("Enter the value of B");
@@ -269,7 +269,7 @@ document.write("You will need "+need+ " salanties to last 40 years");
 
 
 
-Chapter 6-9
+// Chapter 6-9
 
 /*Arithematic Operations */
 
@@ -368,7 +368,7 @@ document.write ("The percentage of yours is "+percentage);
 
 
 
-Chapter 9-11
+// Chapter 9-11
 
 
 /* Welcoming on specific city */
@@ -566,7 +566,7 @@ else if (sign === "%")
 }
 
 
-Chapter 12-13
+// Chapter 12-13
 
 
 
@@ -702,7 +702,7 @@ if (time>=00 && time<12){
                 document.write("Good Morning!");
 }
 
-var time = +prompt ("Enter time in whole numbers 24 hours");
+
 
 else if (time>=12 && time<17){
                 document.write("Good Evening!");
@@ -721,7 +721,8 @@ else {
 }
 
 
- Chapter 14-16
+
+//  Chapter 14-16
 
  
 
@@ -822,7 +823,7 @@ document.write(newArr);
 
 
 
-Chapter 17-20
+// Chapter 17-20
 
 for (var i =1 ; i<11;i++)
 {
@@ -945,7 +946,7 @@ for (var i = 5 ; i<=100 ; i++)
                         }
 }
 
-Chapter 21-25
+// Chapter 21-25
 
 
 /* Task 1 */
@@ -1164,7 +1165,7 @@ for (var i = 0 ; i <=university.length;i++)
       document.write(count);
 
 
-    Chapter 26-30
+    // Chapter 26-30
 
     /*task 1 */
 
@@ -1260,7 +1261,7 @@ else{
 document.write(""+secret);
 
 
-Chapter 31 - 34
+// Chapter 31 - 34
 
 /* task 1 */
 
@@ -1417,7 +1418,7 @@ document.write("DueDate: "+accDueDate+" Amount:"+withinDate+"<br>");
 document.write("Net payable amount after due date: "+afterDate);
 
 
-Chapter 35-38
+// Chapter 35-38
 
 /*task 1 */
 
@@ -1841,10 +1842,10 @@ var overTimeSalary = (salary+12*overTime);
 document.write(overTimeSalary);
 
 
- task 10 couldnt understand
+//  task 10 couldnt understand
 
 
-                                       chapter 43-48
+                                    //    chapter 43-48
 
 //  task 1 2
 
@@ -1854,13 +1855,13 @@ function helloWorld(){
 }
 
 
-   //  task 3
-function remove(){
-        
-       
-       var courses =  document.getElementById("courses").deleteRow(0); 
-       
+ //   task 3
+function remove(){ 
+       var courses = document.getElementById("tbody");
+       var row = document.getElementById("row");
+       row.remove();
 }
+
 
      
 //  task 4
@@ -1922,6 +1923,46 @@ function signUp(){
       peragraf.innerHTML = text;
   }
   
+var tableBody = document.getElementById("tableBody");
+
+  function table(){ 
+    var courses = document.getElementById("tbody");
+    var rows = document.createElement("tr");
+    rows.setAttribute("class","row");
+    var cols = document.createElement("td");
+    var colText = document.createTextNode("1");
+    cols.appendChild(colText);
+    var col2 = document.createElement("td");
+    var col2Text = document.createTextNode("Azhar");
+    col2.appendChild(col2Text);
+    var col3 = document.createElement("td");
+    var col3Text = document.createTextNode("9");
+    col3.appendChild(col3Text);
+  
+    var delBtn = document.createElement("button");
+    var delText = document.createTextNode("Delete");
+    delBtn.setAttribute("class","newBtn");
+    delBtn.setAttribute("onclick","deleteItem(this)");
+    delBtn.appendChild(delText);
+   
+  
+    rows.appendChild(cols);
+    rows.appendChild(col2);
+    rows.appendChild(col3);
+    rows.appendChild(delBtn);
+    tableBody.appendChild(rows);
+  }
+  
+  
+  function deleteItem(e)
+  {
+      e.parentNode.remove();
+  }
+  
+
+
+
+
 
 
 
